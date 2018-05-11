@@ -1,4 +1,3 @@
-# in docker daemon -->  "storage-driver": "aufs"
 FROM ubuntu:16.04
 
 RUN apt-get update \
@@ -8,8 +7,6 @@ RUN apt-get update \
 	   wget \
 	   sudo \
 	   vim \
-	   #linux-generic \
-	   #--no-install-recommends apt-utils \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
