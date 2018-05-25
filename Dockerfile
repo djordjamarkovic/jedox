@@ -46,3 +46,6 @@ WORKDIR /
 EXPOSE 80
 EXPOSE 7777
 EXPOSE 7775
+
+# add entrypoint
+ENTRYPOINT /opt/jedox/ps/jedox-suite.sh start && /bin/bash
