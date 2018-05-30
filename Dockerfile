@@ -25,10 +25,10 @@ USER root
 RUN chmod -R 777 /tmp
 
 # download software
-ADD https://www.jedox.com/downloads/software/2018/1/Jedox_premium_lin_2018_1.tar /tmp/
+ADD http://www.jedox.com/downloads/software/6/sr3/jedox_6_0_sr3.tar /tmp/
 
 # extract software
-RUN tar -xvf /tmp/Jedox_premium_lin_2018_1.tar -C /tmp/
+RUN tar -xvf /tmp/jedox_6_0_sr3.tar -C /tmp/
 
 # change to working directory /tmp
 WORKDIR /tmp
@@ -38,7 +38,7 @@ RUN ./install.sh --automatic
 
 # cleanup
 RUN rm -rfv /tmp/*
-RUN rm -rfv /tmp/.lic_agr_7.1
+RUN rm -rfv /tmp/.*
 
 # change to working directory
 WORKDIR /
