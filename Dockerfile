@@ -38,7 +38,7 @@ RUN ./install.sh --automatic
 
 # cleanup
 RUN rm -rfv /tmp/*
-RUN rm -rfv /tmp/.*
+RUN rm -rfv /tmp/.lic_agr_6.0
 
 # change to working directory
 WORKDIR /
