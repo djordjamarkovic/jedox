@@ -25,10 +25,10 @@ USER root
 RUN chmod -R 777 /tmp
 
 # download software
-ADD https://www.jedox.com/downloads/software/2018/2/Jedox_premium_lin_2018_2.tar /tmp/
+ADD https://www.jedox.com/downloads/software/2018/3/Jedox_2018_3_lin.tar /tmp/
 
 # extract software
-RUN tar -xvf /tmp/Jedox_premium_lin_2018_2.tar -C /tmp/
+RUN tar -xvf /tmp/Jedox_2018_3_lin.tar -C /tmp/
 
 # change to working directory /tmp
 WORKDIR /tmp
@@ -38,7 +38,7 @@ RUN ./install.sh --automatic
 
 # cleanup
 RUN rm -rfv /tmp/*
-#RUN rm -rfv /tmp/.lic_agr_7.1
+RUN rm -rfv /tmp/.lic_agr_7.1
 
 # change to working directory
 WORKDIR /
@@ -49,4 +49,4 @@ EXPOSE 7777
 EXPOSE 7775
 
 # add entrypoint
-# ENTRYPOINT /opt/jedox/ps/jedox-suite.sh start && /bin/bash
+#ENTRYPOINT /opt/jedox/ps/jedox-suite.sh start && /bin/bash
