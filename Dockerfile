@@ -25,10 +25,10 @@ USER root
 RUN chmod -R 777 /tmp
 
 # download software
-ADD https://www.jedox.com/downloads/software/2018/1/Jedox_premium_lin_2018_1.tar /tmp/
+ADD https://www.jedox.com/downloads/software/2018/3/Jedox_2018_3_lin.tar /tmp/
 
 # extract software
-RUN tar -xvf /tmp/Jedox_premium_lin_2018_1.tar -C /tmp/
+RUN tar -xvf /tmp/Jedox_2018_3_lin.tar -C /tmp/
 
 # change to working directory /tmp
 WORKDIR /tmp
@@ -49,4 +49,4 @@ EXPOSE 7777
 EXPOSE 7775
 
 # add entrypoint
-ENTRYPOINT /opt/jedox/ps/jedox-suite.sh start && /bin/bash
+#ENTRYPOINT /opt/jedox/ps/jedox-suite.sh start && /bin/bash
