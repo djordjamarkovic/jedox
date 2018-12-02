@@ -25,10 +25,10 @@ USER root
 RUN chmod -R 777 /tmp
 
 # download software
-ADD https://www.jedox.com/downloads/software/2018/3/Jedox_2018_3_lin.tar /tmp/
+ADD https://www.jedox.com/downloads/software/2018/4/Jedox_2018_4_lin.tar /tmp/
 
 # extract software
-RUN tar -xvf /tmp/Jedox_2018_3_lin.tar -C /tmp/
+RUN tar -xvf /tmp/Jedox_2018_4_lin.tar -C /tmp/
 
 # change to working directory /tmp
 WORKDIR /tmp
