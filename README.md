@@ -1,7 +1,8 @@
 # jedox
 #jedox Supported tags and respective Dockerfile links
 
-latest: Jedox 2018.3 (trial license)  
+latest: Jedox 2018.4 (trial license)  
+2018_4: Jedox 2018.4 (trial license)  
 2018_3: Jedox 2018.3 (trial license)  
 2018_2: Jedox 2018.2 (trial license)  
 2018_1: Jedox 2018.1 (trial license)  
