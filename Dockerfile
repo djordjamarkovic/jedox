@@ -49,4 +49,4 @@ EXPOSE 7777
 EXPOSE 7775
 
 # add entrypoint
-ENTRYPOINT /opt/jedox/ps/jedox-suite.sh start && /bin/bash
+#ENTRYPOINT /opt/jedox/ps/jedox-suite.sh start && /bin/bash
