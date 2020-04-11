@@ -25,10 +25,10 @@ USER root
 RUN chmod -R 777 /tmp
 
 # download software
-ADD http://cdn.jedox.com/wp-content/downloads/software/2019/3/Jedox_2019_3_lin.tar /tmp/
+ADD http://cdn.jedox.com/wp-content/downloads/software/2020/1/Jedox_2020_1_lin.tar /tmp/
 
 # extract software
-RUN tar -xvf /tmp/Jedox_2019_3_lin.tar -C /tmp/
+RUN tar -xvf /tmp/Jedox_2020_1_lin.tar -C /tmp/
 
 # change to working directory /tmp
 WORKDIR /tmp
@@ -38,7 +38,7 @@ RUN ./install.sh --automatic
 
 # cleanup
 RUN rm -rfv /tmp/*
-RUN rm -rfv /tmp/.lic_agr_7.1
+#RUN rm -rfv /tmp/.lic_agr_7.1
 
 # change to working directory
 WORKDIR /
