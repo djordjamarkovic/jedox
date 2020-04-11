@@ -28,7 +28,7 @@ RUN chmod -R 777 /tmp
 ADD http://cdn.jedox.com/wp-content/downloads/software/2020/1/Jedox_2020_1_lin.tar /tmp/
 
 # extract software
-RUN tar -xvf /tmp/Jedox_2019_3_lin.tar -C /tmp/
+RUN tar -xvf /tmp/Jedox_2020_1_lin.tar -C /tmp/
 
 # change to working directory /tmp
 WORKDIR /tmp
