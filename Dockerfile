@@ -25,10 +25,10 @@ USER root
 RUN chmod -R 777 /tmp
 
 # download software
-ADD http://cdn.jedox.com/wp-content/downloads/software/2020/3/Jedox_2020_3_lin.tar /tmp/
+ADD https://jdxdownload.azureedge.net/release/setup/20.4/Jedox_2020_4_lin.tar /tmp/
 
 # extract software
-RUN tar -xvf /tmp/Jedox_2020_3_lin.tar -C /tmp/
+RUN tar -xvf /tmp/Jedox_2020_4_lin.tar -C /tmp/
 
 # change to working directory /tmp
 WORKDIR /tmp
