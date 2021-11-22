@@ -25,10 +25,10 @@ USER root
 RUN chmod -R 777 /tmp
 
 # download software
-ADD https://jdxdownload.azureedge.net/release/setup/21.1/Jedox_2021_1_lin.tar /tmp/
+ADD https://jdxdownload.azureedge.net/release/setup/21.2/Jedox_2021_2_lin.tar /tmp/
 
 # extract software
-RUN tar -xvf /tmp/Jedox_2021_1_lin.tar -C /tmp/
+RUN tar -xvf /tmp/Jedox_2021_2_lin.tar -C /tmp/
 
 # change to working directory /tmp
 WORKDIR /tmp
